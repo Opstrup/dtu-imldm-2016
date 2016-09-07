@@ -1,0 +1,29 @@
+1. Description of data set
+
+  - What are the problem of interest:
+    The problem of interest is forest fires,
+    the aim is to predict the burned area of forest fires.
+    Using weather data.
+
+  - Where you obtained the data:
+    Paula C. & Aníbal M. from University of Minho, Portugal.
+
+  - What has previously been done to the data:
+    P. Cortez and A. Morais. A Data Mining Approach to Predict Forest Fires using Meteorological Data.
+    In Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence,
+    December, 2007. (http://www.dsi.uminho.pt/~pcortez/fires.pdf)
+
+    In the above reference, the output "area" was first transformed with a ln(x+1) function.
+    Then, several Data Mining methods were applied. After fitting the models, the outputs were
+    post-processed with the inverse of the ln(x+1) transform. Four different input setups were
+    used. The experiments were conducted using a 10-fold (cross-validation) x 30 runs. Two
+    regression metrics were measured: MAD and RMSE. A Gaussian support vector machine (SVM) fed
+    with only 4 direct weather conditions (temp, RH, wind and rain) obtained the best MAD value:
+    12.71 +- 0.01 (mean and confidence interval within 95% using a t-student distribution). The
+    best RMSE was attained by the naive mean predictor. An analysis to the regression error curve
+    (REC) shows that the SVM model predicts more examples within a lower admitted error. In effect,
+    the SVM model predicts better small fires, which are the majority.
+
+  - What the primary machine learning model aim of the data:
+    The important attributes for the analysis would be: area, temp, wind and rain.
+    For predicting the burned areas of future forest fires.
