@@ -27,3 +27,5 @@ for i, col_id in enumerate(range(3,11)):
 N = len(y)
 M = len(attributeNames)
 C = len(classNames)
+
+print('classnames: {0}'.format(C))
