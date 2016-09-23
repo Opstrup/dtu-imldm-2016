@@ -23,5 +23,5 @@ with open('dataset/forestfires.csv') as csvfile:
         rain.append(row['rain'])
         
         
-data_to_plot = [rain]
-plt.boxplot(np.array(data_to_plot).astype(np.float))
+data_to_plot = [temp]
+plt.boxplot(np.array(temp).astype(np.float))
