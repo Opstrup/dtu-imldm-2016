@@ -7,6 +7,7 @@ Created on Tue Sep 20 15:44:54 2016
 #import xlrd
 import csv
 import matplotlib.pyplot as plt
+import numpy as np
 
 # importing the dataset
 temp = []
@@ -22,5 +23,5 @@ with open('dataset/forestfires.csv') as csvfile:
         rain.append(row['rain'])
         
         
-data_to_plot = [temp, wind, rain]
-plt.boxplot(data_to_plot)
+data_to_plot = [rain]
+plt.boxplot(np.array(data_to_plot).astype(np.float))
