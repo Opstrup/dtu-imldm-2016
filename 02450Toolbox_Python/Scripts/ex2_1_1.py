@@ -28,4 +28,4 @@ N = len(y)
 M = len(attributeNames)
 C = len(classNames)
 
-print('classnames: {0}'.format(C))
+print(y)
