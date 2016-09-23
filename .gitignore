@@ -14,6 +14,8 @@
 *.fot
 *.cb
 *.cb2
+*.pdf
+**/*.pdf
 
 ## Intermediate documents:
 *.dvi

@@ -6,11 +6,21 @@ Created on Tue Sep 20 15:44:54 2016
 """
 #import xlrd
 import csv
+import matplotlib.pyplot as plt
 
 # importing the dataset
+temp = []
+wind = []
+rain = []
 with open('dataset/forestfires.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     count = 2
     for row in reader:
-        print('Row num.' + str(count) + ' - ' +  str(row['temp']))
-        count += 1
+#        print('Row num.' + str(count) + ' - ' +  str(row['temp']))
+        temp.append(row['temp'])
+        wind.append(row['wind'])
+        rain.append(row['rain'])
+        
+        
+data_to_plot = [temp, wind, rain]
+plt.boxplot(data_to_plot)
