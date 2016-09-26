@@ -1,0 +1,34 @@
+% !TeX spellcheck = en_GB
+\documentclass[12pt]{report}
+% Relevant for frontpage and headers
+\course{02450: Machine Learning}
+\title{Report 1}
+\author{Anders H. Opstrup (s160148)\\Gu Jinshan (s161944)\\Huayu Zheng(s126077)}
+\rhead{s160148,s161944,s126077}
+\date{27 September 2016}
+
+% Document specific includes
+\usetikzlibrary{chains}
+\usepackage{caption}
+
+\def \CSP {Cubesat Space Protocol}
+\newcommand*\rot{\rotatebox{90}}
+
+\begin{document}
+\maketitle % comment this out to \ove the front page
+\newpage
+\pagenumbering{roman}
+%\input{Sections/abstract}
+
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\input{Sections/introduction}
+
+%\newpage
+%\input{Sections/schedule}
+\newpage
+\input{Sections/conclusion}
+
+\end{document}
