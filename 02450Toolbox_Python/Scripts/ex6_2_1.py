@@ -1,6 +1,5 @@
 # exercise 6.2.1
 
-
 from pylab import *
 from scipy.io import loadmat
 import sklearn.linear_model as lm
