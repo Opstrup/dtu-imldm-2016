@@ -1,0 +1,569 @@
+Crossvalidation fold: 1/5
+Training network 1/5...
+Epoch: 3; Error: 746254799.358;
+Epoch: 6; Error: 722719721.297;
+Epoch: 9; Error: 719143081.888;
+Epoch: 12; Error: 719139758.713;
+Epoch: 15; Error: 718554629.466;
+Epoch: 18; Error: 718511944.945;
+Epoch: 21; Error: 718324242.417;
+Epoch: 24; Error: 718238865.384;
+Epoch: 27; Error: 717975905.977;
+Epoch: 30; Error: 717723424.391;
+Epoch: 33; Error: 717186379.957;
+Epoch: 36; Error: 717094019.701;
+Epoch: 39; Error: 716976832.896;
+Epoch: 42; Error: 711974292.906;
+Epoch: 45; Error: 710551350.809;
+Epoch: 48; Error: 710303350.522;
+Epoch: 51; Error: 709909663.018;
+Epoch: 54; Error: 709573934.215;
+Epoch: 57; Error: 709065804.562;
+Epoch: 60; Error: 708848989.309;
+Epoch: 63; Error: 708781226.971;
+The maximum number of train epochs is reached
+Training network 2/5...
+Epoch: 3; Error: 752622003.958;
+Epoch: 6; Error: 730778814.893;
+Epoch: 9; Error: 724306639.913;
+Epoch: 12; Error: 724187941.791;
+Epoch: 15; Error: 724113590.615;
+Epoch: 18; Error: 723898504.096;
+Epoch: 21; Error: 723858456.076;
+Epoch: 24; Error: 723784864.398;
+Epoch: 27; Error: 722304619.872;
+Epoch: 30; Error: 722302666.642;
+Epoch: 33; Error: 722277953.276;
+Epoch: 36; Error: 722166171.021;
+Epoch: 39; Error: 722153875.686;
+Epoch: 42; Error: 722102370.198;
+Epoch: 45; Error: 722068231.834;
+Epoch: 48; Error: 721272646.5;
+Epoch: 51; Error: 721137566.983;
+Epoch: 54; Error: 718639515.742;
+Epoch: 57; Error: 718565896.413;
+Epoch: 60; Error: 718483621.984;
+Epoch: 63; Error: 718387626.883;
+The maximum number of train epochs is reached
+Training network 3/5...
+Epoch: 3; Error: 742649981.736;
+Epoch: 6; Error: 726435967.405;
+Epoch: 9; Error: 722376163.606;
+Epoch: 12; Error: 719615710.207;
+Epoch: 15; Error: 719501359.211;
+Epoch: 18; Error: 719256138.101;
+Epoch: 21; Error: 719088217.779;
+Epoch: 24; Error: 718845032.541;
+Epoch: 27; Error: 713142452.47;
+Epoch: 30; Error: 713079793.013;
+Epoch: 33; Error: 713025847.769;
+Epoch: 36; Error: 712729070.117;
+Epoch: 39; Error: 709413008.582;
+Epoch: 42; Error: 709381329.285;
+Epoch: 45; Error: 709356557.185;
+Epoch: 48; Error: 709150165.922;
+Epoch: 51; Error: 709136952.704;
+Epoch: 54; Error: 708514516.712;
+Epoch: 57; Error: 708488824.766;
+Epoch: 60; Error: 708444671.007;
+Epoch: 63; Error: 708288085.326;
+The maximum number of train epochs is reached
+Training network 4/5...
+Epoch: 3; Error: 716465720.87;
+Epoch: 6; Error: 714212315.274;
+Epoch: 9; Error: 711709954.507;
+Epoch: 12; Error: 708131030.82;
+Epoch: 15; Error: 707392074.544;
+Epoch: 18; Error: 707324239.871;
+Epoch: 21; Error: 706961756.941;
+Epoch: 24; Error: 705947207.634;
+Epoch: 27; Error: 705909127.995;
+Epoch: 30; Error: 705795066.923;
+Epoch: 33; Error: 705693796.467;
+Epoch: 36; Error: 705659904.169;
+Epoch: 39; Error: 705317918.638;
+Epoch: 42; Error: 705246079.132;
+Epoch: 45; Error: 705175694.081;
+Epoch: 48; Error: 705166152.322;
+Epoch: 51; Error: 705160292.025;
+Epoch: 54; Error: 705144736.83;
+Epoch: 57; Error: 704719558.377;
+Epoch: 60; Error: 704551967.078;
+Epoch: 63; Error: 701693904.607;
+The maximum number of train epochs is reached
+Training network 5/5...
+Epoch: 3; Error: 764866806.036;
+Epoch: 6; Error: 732544913.741;
+Epoch: 9; Error: 732355074.927;
+Epoch: 12; Error: 723636468.764;
+Epoch: 15; Error: 723615759.547;
+Epoch: 18; Error: 722281544.385;
+Epoch: 21; Error: 710159635.152;
+Epoch: 24; Error: 710092092.702;
+Epoch: 27; Error: 709136228.227;
+Epoch: 30; Error: 708899096.232;
+Epoch: 33; Error: 708521570.808;
+Epoch: 36; Error: 708312276.948;
+Epoch: 39; Error: 706225228.501;
+Epoch: 42; Error: 706151976.016;
+Epoch: 45; Error: 705973557.396;
+Epoch: 48; Error: 705894021.158;
+Epoch: 51; Error: 705855569.705;
+Epoch: 54; Error: 705649879.266;
+Epoch: 57; Error: 705557291.709;
+Epoch: 60; Error: 705531432.394;
+Epoch: 63; Error: 705407187.25;
+The maximum number of train epochs is reached
+Best train error: 701213109.466...
+
+Crossvalidation fold: 2/5
+Training network 1/5...
+Epoch: 3; Error: 705160231.232;
+Epoch: 6; Error: 622643700.215;
+Epoch: 9; Error: 598543354.813;
+Epoch: 12; Error: 597708484.554;
+Epoch: 15; Error: 597687562.982;
+Epoch: 18; Error: 596050974.474;
+Epoch: 21; Error: 596008606.327;
+Epoch: 24; Error: 595702143.145;
+Epoch: 27; Error: 595636064.26;
+Epoch: 30; Error: 595332168.013;
+Epoch: 33; Error: 595252334.058;
+Epoch: 36; Error: 595141059.616;
+Epoch: 39; Error: 594611040.782;
+Epoch: 42; Error: 594343094.223;
+Epoch: 45; Error: 593706881.694;
+Epoch: 48; Error: 589482039.37;
+Epoch: 51; Error: 582278354.626;
+Epoch: 54; Error: 574742112.634;
+Epoch: 57; Error: 573684330.285;
+Epoch: 60; Error: 572572619.607;
+Epoch: 63; Error: 571693953.978;
+The maximum number of train epochs is reached
+Training network 2/5...
+Epoch: 3; Error: 626153525.91;
+Epoch: 6; Error: 599959468.131;
+Epoch: 9; Error: 599825442.085;
+Epoch: 12; Error: 598855585.45;
+Epoch: 15; Error: 594793244.999;
+Epoch: 18; Error: 594549034.913;
+Epoch: 21; Error: 585497644.429;
+Epoch: 24; Error: 585277124.687;
+Epoch: 27; Error: 585225921.621;
+Epoch: 30; Error: 585121972.157;
+Epoch: 33; Error: 583724154.535;
+Epoch: 36; Error: 582295162.176;
+Epoch: 39; Error: 582004219.567;
+Epoch: 42; Error: 581893721.843;
+Epoch: 45; Error: 581083230.458;
+Epoch: 48; Error: 579353661.411;
+Epoch: 51; Error: 579299380.483;
+Epoch: 54; Error: 575701348.953;
+Epoch: 57; Error: 575614607.829;
+Epoch: 60; Error: 573621533.799;
+Epoch: 63; Error: 572426643.543;
+The maximum number of train epochs is reached
+Training network 3/5...
+Epoch: 3; Error: 572976972.011;
+Epoch: 6; Error: 571118731.693;
+Epoch: 9; Error: 570638532.082;
+Epoch: 12; Error: 560980255.528;
+Epoch: 15; Error: 556892710.706;
+Epoch: 18; Error: 556464360.558;
+Epoch: 21; Error: 556379838.963;
+Epoch: 24; Error: 556332259.663;
+Epoch: 27; Error: 555466710.063;
+Epoch: 30; Error: 555399800.824;
+Epoch: 33; Error: 555143844.09;
+Epoch: 36; Error: 555033888.148;
+Epoch: 39; Error: 555015834.056;
+Epoch: 42; Error: 554979324.61;
+Epoch: 45; Error: 554856878.597;
+Epoch: 48; Error: 554321204.068;
+Epoch: 51; Error: 554205327.053;
+Epoch: 54; Error: 554171449.652;
+Epoch: 57; Error: 554135836.708;
+Epoch: 60; Error: 553078575.149;
+Epoch: 63; Error: 548720430.036;
+The maximum number of train epochs is reached
+Training network 4/5...
+Epoch: 3; Error: 585424386.946;
+Epoch: 6; Error: 580477302.93;
+Epoch: 9; Error: 580045037.741;
+Epoch: 12; Error: 579849549.133;
+Epoch: 15; Error: 578917609.605;
+Epoch: 18; Error: 578878690.272;
+Epoch: 21; Error: 578862811.788;
+Epoch: 24; Error: 578847188.202;
+Epoch: 27; Error: 578673790.388;
+Epoch: 30; Error: 578329519.708;
+Epoch: 33; Error: 571562660.276;
+Epoch: 36; Error: 571542394.607;
+Epoch: 39; Error: 571530796.225;
+Epoch: 42; Error: 571517746.434;
+Epoch: 45; Error: 571454395.402;
+Epoch: 48; Error: 571325205.916;
+Epoch: 51; Error: 570914971.869;
+Epoch: 54; Error: 570815405.256;
+Epoch: 57; Error: 570258459.198;
+Epoch: 60; Error: 568554190.932;
+Epoch: 63; Error: 566411863.544;
+The maximum number of train epochs is reached
+Training network 5/5...
+Epoch: 3; Error: 600898693.052;
+Epoch: 6; Error: 594742349.448;
+Epoch: 9; Error: 594543446.745;
+Epoch: 12; Error: 594499522.799;
+Epoch: 15; Error: 594490239.742;
+Epoch: 18; Error: 594480017.983;
+Epoch: 21; Error: 594447584.955;
+Epoch: 24; Error: 594425458.468;
+Epoch: 27; Error: 594405799.152;
+Epoch: 30; Error: 594404829.737;
+Epoch: 33; Error: 594262089.08;
+Epoch: 36; Error: 594047622.416;
+Epoch: 39; Error: 594033849.813;
+Epoch: 42; Error: 593965648.602;
+Epoch: 45; Error: 593943625.687;
+Epoch: 48; Error: 593939962.65;
+Epoch: 51; Error: 593783503.057;
+Epoch: 54; Error: 593671134.468;
+Epoch: 57; Error: 593076237.139;
+Epoch: 60; Error: 592977319.786;
+Epoch: 63; Error: 592741395.808;
+The maximum number of train epochs is reached
+Best train error: 548165274.142...
+
+Crossvalidation fold: 3/5
+Training network 1/5...
+Epoch: 3; Error: 704292017.846;
+Epoch: 6; Error: 703974554.338;
+Epoch: 9; Error: 699513127.68;
+Epoch: 12; Error: 699404051.939;
+Epoch: 15; Error: 698465137.808;
+Epoch: 18; Error: 697274909.523;
+Epoch: 21; Error: 697236101.43;
+Epoch: 24; Error: 690292129.069;
+Epoch: 27; Error: 689654448.978;
+Epoch: 30; Error: 689627896.583;
+Epoch: 33; Error: 689540704.754;
+Epoch: 36; Error: 689510226.528;
+Epoch: 39; Error: 689407236.778;
+Epoch: 42; Error: 689351841.858;
+Epoch: 45; Error: 689333051.847;
+Epoch: 48; Error: 689161309.207;
+Epoch: 51; Error: 689118007.347;
+Epoch: 54; Error: 689116496.628;
+Epoch: 57; Error: 688988751.337;
+Epoch: 60; Error: 687670329.131;
+Epoch: 63; Error: 686514439.426;
+The maximum number of train epochs is reached
+Training network 2/5...
+Epoch: 3; Error: 714090929.199;
+Epoch: 6; Error: 698830278.101;
+Epoch: 9; Error: 698792794.723;
+Epoch: 12; Error: 692972197.55;
+Epoch: 15; Error: 688949214.853;
+Epoch: 18; Error: 688698717.532;
+Epoch: 21; Error: 688621102.952;
+Epoch: 24; Error: 688597077.184;
+Epoch: 27; Error: 688560681.403;
+Epoch: 30; Error: 688502325.138;
+Epoch: 33; Error: 688476043.2;
+Epoch: 36; Error: 688463304.744;
+Epoch: 39; Error: 688370907.187;
+Epoch: 42; Error: 688345512.715;
+Epoch: 45; Error: 688284771.885;
+Epoch: 48; Error: 687759307.98;
+Epoch: 51; Error: 687618342.56;
+Epoch: 54; Error: 687514682.882;
+Epoch: 57; Error: 687179631.701;
+Epoch: 60; Error: 686338772.818;
+Epoch: 63; Error: 686114886.75;
+The maximum number of train epochs is reached
+Training network 3/5...
+Epoch: 3; Error: 715980705.122;
+Epoch: 6; Error: 708803511.673;
+Epoch: 9; Error: 707539586.785;
+Epoch: 12; Error: 706675673.057;
+Epoch: 15; Error: 706666539.159;
+Epoch: 18; Error: 706576886.162;
+Epoch: 21; Error: 706566709.393;
+Epoch: 24; Error: 706495256.245;
+Epoch: 27; Error: 704506713.288;
+Epoch: 30; Error: 703215423.412;
+Epoch: 33; Error: 702938674.242;
+Epoch: 36; Error: 702907365.125;
+Epoch: 39; Error: 702139897.145;
+Epoch: 42; Error: 701948718.504;
+Epoch: 45; Error: 701578204.99;
+Epoch: 48; Error: 701525579.439;
+Epoch: 51; Error: 701493083.24;
+Epoch: 54; Error: 701432006.278;
+Epoch: 57; Error: 699042234.04;
+Epoch: 60; Error: 699013260.741;
+Epoch: 63; Error: 698979841.917;
+The maximum number of train epochs is reached
+Training network 4/5...
+Epoch: 3; Error: 715015864.699;
+Epoch: 6; Error: 701639968.319;
+Epoch: 9; Error: 701506235.578;
+Epoch: 12; Error: 701472888.196;
+Epoch: 15; Error: 698263990.481;
+Epoch: 18; Error: 696943640.031;
+Epoch: 21; Error: 696892167.468;
+Epoch: 24; Error: 696814972.422;
+Epoch: 27; Error: 696782840.856;
+Epoch: 30; Error: 696714890.612;
+Epoch: 33; Error: 696092922.161;
+Epoch: 36; Error: 696013212.374;
+Epoch: 39; Error: 695098048.029;
+Epoch: 42; Error: 695076384.944;
+Epoch: 45; Error: 694490193.906;
+Epoch: 48; Error: 694438185.352;
+Epoch: 51; Error: 694265890.574;
+Epoch: 54; Error: 694144108.779;
+Epoch: 57; Error: 693196535.194;
+Epoch: 60; Error: 692356400.172;
+Epoch: 63; Error: 692262148.311;
+The maximum number of train epochs is reached
+Training network 5/5...
+Epoch: 3; Error: 787923764.225;
+Epoch: 6; Error: 708182804.537;
+Epoch: 9; Error: 706376145.57;
+Epoch: 12; Error: 706247769.7;
+Epoch: 15; Error: 706010587.014;
+Epoch: 18; Error: 705900720.989;
+Epoch: 21; Error: 705886099.134;
+Epoch: 24; Error: 705863420.303;
+Epoch: 27; Error: 702412847.852;
+Epoch: 30; Error: 701306483.608;
+Epoch: 33; Error: 701182417.643;
+Epoch: 36; Error: 701123206.73;
+Epoch: 39; Error: 701050410.62;
+Epoch: 42; Error: 700952861.459;
+Epoch: 45; Error: 700488041.783;
+Epoch: 48; Error: 700477235.432;
+Epoch: 51; Error: 700323772.876;
+Epoch: 54; Error: 700026050.739;
+Epoch: 57; Error: 698692602.446;
+Epoch: 60; Error: 698175746.653;
+Epoch: 63; Error: 698050449.992;
+The maximum number of train epochs is reached
+Best train error: 686054422.834...
+
+Crossvalidation fold: 4/5
+Training network 1/5...
+Epoch: 3; Error: 732213000.999;
+Epoch: 6; Error: 698399864.067;
+Epoch: 9; Error: 698330241.571;
+Epoch: 12; Error: 698227354.425;
+Epoch: 15; Error: 698172824.035;
+Epoch: 18; Error: 670482418.507;
+Epoch: 21; Error: 670216886.451;
+Epoch: 24; Error: 670214938.327;
+Epoch: 27; Error: 667776950.677;
+Epoch: 30; Error: 667745758.798;
+Epoch: 33; Error: 667682970.144;
+Epoch: 36; Error: 667632193.152;
+Epoch: 39; Error: 667584010.731;
+Epoch: 42; Error: 667582780.127;
+Epoch: 45; Error: 667572273.005;
+Training network 2/5...
+Epoch: 3; Error: 645529935.978;
+Epoch: 6; Error: 642816446.896;
+Epoch: 9; Error: 636230847.786;
+Epoch: 12; Error: 634326786.487;
+Epoch: 15; Error: 631991291.116;
+Epoch: 18; Error: 629910375.78;
+Epoch: 21; Error: 629620419.381;
+Epoch: 24; Error: 629499060.099;
+Epoch: 27; Error: 629467264.909;
+Epoch: 30; Error: 629421719.784;
+Epoch: 33; Error: 628136530.108;
+Epoch: 36; Error: 628033088.175;
+Epoch: 39; Error: 628013346.265;
+Epoch: 42; Error: 627976588.047;
+Epoch: 45; Error: 627928885.337;
+Epoch: 48; Error: 627289505.508;
+Epoch: 51; Error: 625852077.66;
+Epoch: 54; Error: 625829087.626;
+Epoch: 57; Error: 625624425.63;
+Epoch: 60; Error: 625319589.556;
+Epoch: 63; Error: 619620986.398;
+The maximum number of train epochs is reached
+Training network 3/5...
+Epoch: 3; Error: 663501753.927;
+Epoch: 6; Error: 662458452.142;
+Epoch: 9; Error: 659089907.88;
+Epoch: 12; Error: 658964878.542;
+Epoch: 15; Error: 658664966.478;
+Epoch: 18; Error: 658299470.355;
+Epoch: 21; Error: 657958655.576;
+Epoch: 24; Error: 655514517.563;
+Epoch: 27; Error: 654427185.689;
+Epoch: 30; Error: 654093015.264;
+Epoch: 33; Error: 653916791.981;
+Epoch: 36; Error: 652907547.012;
+Epoch: 39; Error: 652741341.438;
+Epoch: 42; Error: 652732452.444;
+Epoch: 45; Error: 652558292.066;
+Epoch: 48; Error: 652101397.789;
+Epoch: 51; Error: 651980957.774;
+Epoch: 54; Error: 651070056.526;
+Epoch: 57; Error: 649299913.934;
+Epoch: 60; Error: 644179788.989;
+Epoch: 63; Error: 641778002.727;
+The maximum number of train epochs is reached
+Training network 4/5...
+Epoch: 3; Error: 720140903.146;
+Epoch: 6; Error: 674082747.37;
+Epoch: 9; Error: 670166749.487;
+Epoch: 12; Error: 670151535.24;
+Epoch: 15; Error: 670147874.747;
+Epoch: 18; Error: 670105836.383;
+Epoch: 21; Error: 664997010.389;
+Epoch: 24; Error: 664332843.343;
+Epoch: 27; Error: 664318835.794;
+Epoch: 30; Error: 664242020.641;
+Epoch: 33; Error: 664188628.103;
+Epoch: 36; Error: 656266959.016;
+Epoch: 39; Error: 649909160.73;
+Epoch: 42; Error: 649900945.491;
+Epoch: 45; Error: 649893449.691;
+Epoch: 48; Error: 649123845.809;
+Epoch: 51; Error: 649051440.877;
+Epoch: 54; Error: 645425741.471;
+Epoch: 57; Error: 645011048.136;
+Epoch: 60; Error: 644711371.685;
+Epoch: 63; Error: 644687007.669;
+The maximum number of train epochs is reached
+Training network 5/5...
+Epoch: 3; Error: 699311952.592;
+Epoch: 6; Error: 685166812.147;
+Epoch: 9; Error: 684652791.233;
+Epoch: 12; Error: 682358055.727;
+Epoch: 15; Error: 682046592.818;
+Epoch: 18; Error: 681621020.358;
+Epoch: 21; Error: 681433113.486;
+Best train error: 619315205.293...
+
+Crossvalidation fold: 5/5
+Training network 1/5...
+Epoch: 3; Error: 542336344.521;
+Epoch: 6; Error: 539135444.951;
+Epoch: 9; Error: 536066588.074;
+Epoch: 12; Error: 532483268.122;
+Epoch: 15; Error: 531710444.468;
+Epoch: 18; Error: 529666645.877;
+Epoch: 21; Error: 529405402.175;
+Epoch: 24; Error: 528275873.723;
+Epoch: 27; Error: 524754691.892;
+Epoch: 30; Error: 523561442.378;
+Epoch: 33; Error: 523518522.166;
+Epoch: 36; Error: 523443830.434;
+Epoch: 39; Error: 523428284.412;
+Epoch: 42; Error: 523386347.04;
+Epoch: 45; Error: 523333710.943;
+Epoch: 48; Error: 523104170.456;
+Epoch: 51; Error: 522791449.129;
+Epoch: 54; Error: 521431265.347;
+Epoch: 57; Error: 521273331.693;
+Epoch: 60; Error: 520760970.682;
+Epoch: 63; Error: 516282383.233;
+The maximum number of train epochs is reached
+Training network 2/5...
+Epoch: 3; Error: 542038893.808;
+Epoch: 6; Error: 541235535.716;
+Epoch: 9; Error: 539142206.788;
+Epoch: 12; Error: 534643595.344;
+Epoch: 15; Error: 533925504.225;
+Epoch: 18; Error: 533707172.824;
+Epoch: 21; Error: 533663073.607;
+Epoch: 24; Error: 533514311.067;
+Epoch: 27; Error: 533319896.715;
+Epoch: 30; Error: 532520960.975;
+Epoch: 33; Error: 532289780.591;
+Epoch: 36; Error: 532206953.779;
+Epoch: 39; Error: 532138296.471;
+Epoch: 42; Error: 532131952.24;
+Epoch: 45; Error: 532093971.853;
+Epoch: 48; Error: 531616036.781;
+Epoch: 51; Error: 531610537.749;
+Epoch: 54; Error: 531602487.217;
+Epoch: 57; Error: 531178597.604;
+Epoch: 60; Error: 529242243.027;
+Epoch: 63; Error: 528983610.174;
+The maximum number of train epochs is reached
+Training network 3/5...
+Epoch: 3; Error: 553618138.804;
+Epoch: 6; Error: 552983183.7;
+Epoch: 9; Error: 552645879.929;
+Epoch: 12; Error: 550377362.496;
+Epoch: 15; Error: 542538023.938;
+Epoch: 18; Error: 537928742.98;
+Epoch: 21; Error: 533999301.516;
+Epoch: 24; Error: 533933242.684;
+Epoch: 27; Error: 533660539.3;
+Epoch: 30; Error: 532992131.227;
+Epoch: 33; Error: 532398535.395;
+Epoch: 36; Error: 532318333.81;
+Epoch: 39; Error: 532271044.293;
+Epoch: 42; Error: 531951343.267;
+Epoch: 45; Error: 531944520.14;
+Epoch: 48; Error: 531785172.712;
+Epoch: 51; Error: 531025228.226;
+Epoch: 54; Error: 531022728.855;
+Epoch: 57; Error: 530951066.02;
+Epoch: 60; Error: 527718291.304;
+Epoch: 63; Error: 524213950.844;
+The maximum number of train epochs is reached
+Training network 4/5...
+Epoch: 3; Error: 549298230.584;
+Epoch: 6; Error: 535998136.805;
+Epoch: 9; Error: 535947612.272;
+Epoch: 12; Error: 535633357.508;
+Epoch: 15; Error: 535566088.29;
+Epoch: 18; Error: 534600115.757;
+Epoch: 21; Error: 534462121.041;
+Epoch: 24; Error: 534453140.038;
+Epoch: 27; Error: 534392451.876;
+Epoch: 30; Error: 534370456.806;
+Epoch: 33; Error: 534315796.293;
+Epoch: 36; Error: 534252903.898;
+Epoch: 39; Error: 534233703.222;
+Epoch: 42; Error: 534154742.382;
+Epoch: 45; Error: 534150566.734;
+Epoch: 48; Error: 534103550.208;
+Epoch: 51; Error: 532516145.375;
+Epoch: 54; Error: 532257822.142;
+Epoch: 57; Error: 531309143.702;
+Epoch: 60; Error: 530407804.087;
+Epoch: 63; Error: 529758731.269;
+The maximum number of train epochs is reached
+Training network 5/5...
+Epoch: 3; Error: 545409104.788;
+Epoch: 6; Error: 544670464.378;
+Epoch: 9; Error: 541707606.032;
+Epoch: 12; Error: 541558314.667;
+Epoch: 15; Error: 540805889.313;
+Epoch: 18; Error: 540652792.646;
+Epoch: 21; Error: 540513874.938;
+Epoch: 24; Error: 540349144.298;
+Epoch: 27; Error: 540303599.624;
+Epoch: 30; Error: 539877213.353;
+Epoch: 33; Error: 539754477.762;
+Epoch: 36; Error: 539553246.242;
+Epoch: 39; Error: 539462197.768;
+Epoch: 42; Error: 539432280.514;
+Epoch: 45; Error: 539031977.965;
+Epoch: 48; Error: 539010290.561;
+Epoch: 51; Error: 538949439.415;
+Epoch: 54; Error: 538903893.745;
+Epoch: 57; Error: 538064852.219;
+Epoch: 60; Error: 535861568.0;
+Epoch: 63; Error: 535163623.553;
+The maximum number of train epochs is reached
+Best train error: 515881323.514...
+Mean-square error: 338307.442386
+Error rate: 33830744.2386%

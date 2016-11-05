@@ -1,4 +1,4 @@
-# exercise 3.4.2
+# exercise 4.4.2
 
 from pylab import *
 import numpy as np

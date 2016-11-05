@@ -1,4 +1,4 @@
-# exercise 2.1.4
+# exercise 3.1.4
 
 import numpy as np
 from tmgsimple import TmgSimple

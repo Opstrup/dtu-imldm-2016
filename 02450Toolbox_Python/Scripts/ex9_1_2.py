@@ -1,4 +1,4 @@
-# exercise 8.1.2
+# exercise 9.1.2
 
 from pylab import *
 from scipy.io import loadmat

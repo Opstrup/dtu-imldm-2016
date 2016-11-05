@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="char_freq_! <= -0.2324\nentropy = 0.9677\nsamples = 4141\nvalue = [2507, 1634]"] ;
+1 [label="word_freq_remove <= -0.1768\nentropy = 0.6176\nsamples = 2403\nvalue = [2035, 368]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.461\nsamples = 2226\nvalue = [2009, 217]"] ;
+1 -> 2 ;
+3 [label="entropy = 0.602\nsamples = 177\nvalue = [26, 151]"] ;
+1 -> 3 ;
+4 [label="char_freq_$ <= -0.2819\nentropy = 0.8437\nsamples = 1738\nvalue = [472, 1266]"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.9997\nsamples = 891\nvalue = [437, 454]"] ;
+4 -> 5 ;
+6 [label="entropy = 0.2483\nsamples = 847\nvalue = [35, 812]"] ;
+4 -> 6 ;
+}

@@ -1,4 +1,4 @@
-# exercise 8.2.1
+# exercise 9.2.1
 
 
 from pylab import *

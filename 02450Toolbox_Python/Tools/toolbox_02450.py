@@ -89,12 +89,14 @@ def feature_selector_lr(X,y,cvf=10,features_record=None,loss_record=None):
     # Include only features not added before.
     selected_features = features_record[:,-1].nonzero()[0]
     min_loss = loss_record[-1]
+    print(min_loss)
     best_feature = False
     for feature in range(0,X.shape[1]):
         if np.where(selected_features==feature)[0].size==0:
             trial_selected = np.concatenate((selected_features,np.array([feature])),0).astype(int)
             # validate selected features with linear regression and cross-validation:
             trial_loss = glm_validate(X[:,trial_selected],y,cvf)
+            print(trial_loss)
             if trial_loss<min_loss:
                 min_loss = trial_loss 
                 best_feature = feature
@@ -477,7 +479,8 @@ def gauss_2d(centroid, ccov, std=2, points=100):
     d, v = np.linalg.eig(ccov); d = std * np.sqrt(np.diag(d))
     bp = np.dot(v, np.dot(d, ap)) + np.tile(mean, (1, ap.shape[1])) 
     return bp[0,:], bp[1,:]
-
+    
+import sklearn.metrics.cluster as cluster_metrics
     
 def clusterval(y, clusterid):
     '''
@@ -497,6 +500,8 @@ def clusterval(y, clusterid):
       Rand       Rand index.
       Jaccard    Jaccard coefficient.
     '''
+    NMI = cluster_metrics.supervised.normalized_mutual_info_score(y.A.ravel(),clusterid)
+    
     y = np.asarray(y).ravel(); clusterid = np.asarray(clusterid).ravel()
     C = np.unique(y).size; K = np.unique(clusterid).size; N = y.shape[0]
     EPS = 2.22e-16
@@ -522,7 +527,7 @@ def clusterval(y, clusterid):
     rand = np.float(f00+f11)/(f00+f01+f10+f11)
     jaccard = np.float(f11)/(f01+f10+f11)
 
-    return entropy, purity, rand, jaccard
+    return rand, jaccard, NMI
 
     
 def gausKernelDensity(X,width):

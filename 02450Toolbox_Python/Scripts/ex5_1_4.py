@@ -1,4 +1,4 @@
-# exercise 5.1.3
+# exercise 5.1.4
 # requires Tree model from exercise 5.1.2
 from ex5_1_2 import *
 

@@ -1,4 +1,4 @@
-# exercise 8.3.3 Fit neural network classifiers using softmax output weighting
+# exercise 8.3.2 Fit neural network classifiers using softmax output weighting
 from pylab import *
 from scipy.io import loadmat
 from toolbox_02450 import dbplotf

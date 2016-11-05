@@ -1,4 +1,4 @@
-# exercise 3.4.1
+# exercise 4.4.1
 
 from pylab import *
 import scipy.linalg as linalg

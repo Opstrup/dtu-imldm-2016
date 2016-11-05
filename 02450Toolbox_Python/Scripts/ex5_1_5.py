@@ -1,4 +1,4 @@
-# exercise 5.1.4
+# exercise 5.1.5
 
 import numpy as np
 from scipy.io import loadmat

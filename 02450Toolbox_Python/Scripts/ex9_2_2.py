@@ -1,4 +1,4 @@
-# exercise 8.2.2
+# exercise 9.2.2
 
 
 from pylab import *
@@ -20,7 +20,7 @@ C = len(classNames)
 # Fit model using bootstrap aggregation (boosting, AdaBoost):
 
 # Number of rounds of bagging
-L = 100
+L = 10000
 
 # Weights for selecting samples in each bootstrap
 weights = np.ones((N,1),dtype=float)/N
@@ -34,35 +34,32 @@ y_all = np.zeros((N,L))
 y = y > 0.5
 # For each round of bagging
 for l in range(L):
-    while True : 
-        # Extract training set by random sampling with replacement from X and y
-        while True : 
-            # not a thing of beauty, however log.reg. fails if presented with less than two classes. 
-            X_train, y_train = bootstrap(X, y, N, weights) 
-            if not (all(y_train==0) or all(y_train == 1)) : break      
-        
-        # Fit logistic regression model to training data and save result
-        # turn off regularization with C. 
-        logit_classifier = LogisticRegression(C=100000000)
     
-        logit_classifier.fit(X_train, y_train.A.ravel()  )
-        logits[l] = logit_classifier
-        y_est = np.mat(logit_classifier.predict(X)).T > 0.5
-        
-        y_all[:,l] = 1.0 * y_est.ravel()
-        v  = matrix(y_est != y,dtype=float)
-        ErrorRate = multiply(weights,v).sum()/N
-        epsi = ErrorRate
-        if epsi > 0.5 : 
-            weights = np.ones( (N,1), dtype=float)/N
-            print "resetting weights..."
-        else : 
-            alphai = 0.5 * log( (1-epsi)/epsi)
-            weights[y_est == y] = weights[y_est == y] * exp( -alphai )
-            weights[y_est != y] = weights[y_est != y] * exp(  alphai )
-            
-            weights = weights / sum(weights)
-            break;
+    # Extract training set by random sampling with replacement from X and y
+    while True : 
+        # not a thing of beauty, however log.reg. fails if presented with less than two classes. 
+        X_train, y_train = bootstrap(X, y, N, weights) 
+        if not (all(y_train==0) or all(y_train == 1)) : break      
+    
+    # Fit logistic regression model to training data and save result
+    # turn off regularization with C. 
+    logit_classifier = LogisticRegression(C=1000)
+
+    logit_classifier.fit(X_train, y_train.A.ravel()  )
+    logits[l] = logit_classifier
+    y_est = np.mat(logit_classifier.predict(X)).T > 0.5
+    
+    y_all[:,l] = 1.0 * y_est.ravel()
+    v  = matrix(y_est != y,dtype=float)
+    ErrorRate = multiply(weights,v).sum()
+    epsi = ErrorRate
+    
+    alphai = 0.5 * log( (1-epsi)/epsi)
+    
+    weights[y_est == y] = weights[y_est == y] * exp( -alphai )
+    weights[y_est != y] = weights[y_est != y] * exp(  alphai )
+    
+    weights = weights / sum(weights)
             
     votes = votes + y_est
     alpha[l] = alphai
@@ -79,10 +76,24 @@ ErrorRateEnsemble = sum(y_est_ensemble != y)/N
 # Compute error rate
 #ErrorRate = (y!=y_est_ensemble).sum(dtype=float)/N
 print('Error rate for ensemble classifier: {:.1f}%'.format(ErrorRateEnsemble*100))
-
+ 
 ce = BinClassifierEnsemble(logits)
-figure(1); dbprobplot(ce, X, y, 'auto', resolution=200)
-figure(2); dbplot(ce, X, y, 'auto', resolution=200)
-figure(3); plot(alpha.A)
+#figure(1); dbprobplot(ce, X, y, 'auto', resolution=200)
+#figure(2); dbplot(ce, X, y, 'auto', resolution=200)
+#figure(3); plot(alpha.A)
 
-show()
+#%%
+#ax = plt.subplots()
+#ax.set_color_cycle(['red', 'black', 'yellow'])
+plt.figure(5)
+plt.hold(True)
+
+for i in range(2):
+    plt.plot(X[ (y_est_ensemble==i).A.ravel(),0],X[ (y_est_ensemble==i).A.ravel(),1],'br'[i] + 'o')
+#    plt.plot(X[ (y_est_ensemble==1).A.ravel(),0],X[ (y_est_ensemble==1).A.ravel(),1],'x')
+    #plt.plot(x, i * x + i, label='$y = {i}x + {i}$'.format(i=i))
+    
+plt.show()
+
+
+#show()

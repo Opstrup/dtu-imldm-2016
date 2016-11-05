@@ -1,4 +1,4 @@
-# exercise 5.1.5
+# exercise 5.1.6
 import numpy as np
 from sklearn import tree
 

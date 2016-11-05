@@ -1,4 +1,4 @@
-# exercise 5.2.1
+# exercise 5.2.2
 
 from pylab import *
 import sklearn.linear_model as lm

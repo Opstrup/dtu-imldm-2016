@@ -1,4 +1,4 @@
-# exercise 9_1_5
+# exercise 10_1_5
 from pylab import *
 from scipy.io import loadmat
 from sklearn.cluster import k_means

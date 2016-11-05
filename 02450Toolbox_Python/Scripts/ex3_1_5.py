@@ -1,4 +1,4 @@
-# exercise 2.1.5
+# exercise 3.1.5
 
 import numpy as np
 import scipy.linalg as linalg

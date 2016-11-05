@@ -19,17 +19,17 @@ from toolbox_02450 import feature_selector_lr, bmplot
 X = np.loadtxt("../dataset/forestfire.data")
 
 attributeNames = np.loadtxt("../dataset/forestfires.names", dtype='str').T
-attributeNames = attributeNames[0:10] # Deleting the attributename, of prediction
+attributeNames = attributeNames[0:9] # Deleting the attributename, of prediction
 
 N, M = X.shape
-spam_class = X[:,10].T
+#fire_class = X[:,10].T
 X = stats.zscore(X)
 y = X[:,10]
 X = X[:,0:9]
 N, M = X.shape
 ## Crossvalidation
 # Create crossvalidation partition for evaluation
-K = 5
+K = 2
 CV = cross_validation.KFold(N,K,shuffle=True)
 
 # Initialize variables

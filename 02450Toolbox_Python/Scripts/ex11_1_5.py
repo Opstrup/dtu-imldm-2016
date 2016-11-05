@@ -1,4 +1,4 @@
-# exercise 10.1.5
+# exercise 11.1.5
 from pylab import *
 from scipy.io import loadmat
 from sklearn.mixture import GMM

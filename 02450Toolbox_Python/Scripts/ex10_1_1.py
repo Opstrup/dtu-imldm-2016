@@ -1,4 +1,4 @@
-# exercise 9.1.1
+# exercise 10.1.1
 from pylab import *
 from scipy.io import loadmat
 from toolbox_02450 import clusterplot

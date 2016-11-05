@@ -12,13 +12,13 @@ maxRule = 4
 
 # Run Apriori Algorithm
 print('Mining for frequent itemsets by the Apriori algorithm')
-status1 = call('apriori.exe -f"," -s{0} -v"[Sup. %0S]" {1} apriori_temp1.txt'.format(minSup, filename))
+status1 = call('../Tools/apriori.exe -f"," -s{0} -v"[Sup. %S]" {1} apriori_temp1.txt'.format(minSup, filename))
 if status1!=0:
     print('An error occured while calling apriori, a likely cause is that minSup was set to high such that no frequent itemsets were generated or spaces are included in the path to the apriori files.')
     exit()
 if minConf>0:
     print('Mining for associations by the Apriori algorithm')
-    status2 = call('apriori.exe -tr -f"," -n{0} -c{1} -s{2} -v"[Conf. %0C,Sup. %0S]" {3} apriori_temp2.txt'.format(maxRule, minConf, minSup, filename))
+    status2 = call('../Tools/apriori.exe -tr -f"," -n{0} -c{1} -s{2} -v"[Conf. %C,Sup. %S]" {3} apriori_temp2.txt'.format(maxRule, minConf, minSup, filename))
     if status2!=0:
         print('An error occured while calling apriori')
         exit()
@@ -34,7 +34,7 @@ FrequentItemsets = ['']*len(lines)
 sup = np.zeros((len(lines),1))
 for i,line in enumerate(lines):
     FrequentItemsets[i] = line[0:-1]
-    sup[i] = re.findall(' \d*]', line)[0][1:-1]
+    sup[i] = re.findall(' [-+]?\d*\.\d+|\d+]', line)[0][1:-1]
 os.remove('apriori_temp1.txt')
     
 # Read the file
@@ -46,7 +46,7 @@ AssocRules = ['']*len(lines)
 conf = np.zeros((len(lines),1))
 for i,line in enumerate(lines):
     AssocRules[i] = line[0:-1]
-    conf[i] = re.findall(' \d*,', line)[0][1:-1]
+    conf[i] = re.findall(' [-+]?\d*\.\d+|\d+,', line)[0][1:-1]
 os.remove('apriori_temp2.txt')    
 
 # sort (FrequentItemsets by support value, AssocRules by confidence value)

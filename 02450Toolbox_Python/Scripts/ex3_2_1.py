@@ -1,4 +1,4 @@
-# exercise 3.1.1
+# exercise 3.2.1
 
 import numpy as np
 
