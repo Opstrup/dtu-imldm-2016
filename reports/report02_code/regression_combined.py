@@ -18,8 +18,8 @@ attributeNames = attributeNames[1:55]
 # Normalize data
 X = stats.zscore(X);
 spam_class = X[:,57].T
-y = X[:,56]
-X = X[:,1:55]
+y = X[:,19]
+X = np.concatenate((X[:,1:18], X[:,20:55]), axis=1)
 N, M = X.shape
 
 # K-fold crossvalidation

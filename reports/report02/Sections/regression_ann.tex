@@ -1,5 +1,5 @@
 \subsection{Artificial Neural Network}
-An Artificial Neural Network (ANN) have been trained to solve the regression problem. For ease of comparison with the linear regression a 10-fold cross validation has been used as well. The network was trained with two hidden units and five networks trained for each fold.
+An Artificial Neural Network (ANN) have been trained to solve the regression problem. For ease of comparison with the linear regression a 10-fold cross validation has been used as well. The network was trained with two hidden units and five networks trained for each fold. With a mean-square error of 0.913393150004, the network does preform a bit better than the linear regression but not significantly better. As seen below (figure \ref{fig:errors_regression_ANN}.) the network does preform quite well for some folds but after some folds it makes some errors again, this could be a sign of possibly gain in efficiency if the network gets optimised a bit more, but here we need to keep in mind the danger for over fitting the model. 
 
 \vspace{-5pt}
 %kommentar
@@ -7,8 +7,8 @@ An Artificial Neural Network (ANN) have been trained to solve the regression pro
 	\centering
 	\includegraphics[width=0.7\textwidth]{Fig/regression_ANN_1.png}
 	\vspace{-5pt}
-	\caption{Selected features}
-	\label{fig:selected_features}
+	\caption{Errors for each fold of the ANN}
+	\label{fig:errors_regression_ANN}
 \end{figure}
 
 \vspace{-5pt}
