@@ -100,23 +100,15 @@ bmplot(attributeNames, range(1,Features.shape[1]+1), -Features)
 clim(-1.5,0)
 xlabel('Crossvalidation fold')
 ylabel('Attribute')
+savefig('regression_1.svg')
 
 
 # Inspect selected feature coefficients effect on the entire dataset and
 # plot the fitted model residual error as function of each attribute to
 # inspect for systematic structure in the residual
-f=5 # cross-validation fold to inspect
+f=2 # cross-validation fold to inspect
 ff=Features[:,f-1].nonzero()[0]
 m = lm.LinearRegression().fit(X[:,ff], y)
-
-print "ff: " + str(ff)
-params = attributeNames[ff]
-coefficients = m.coef_
-
-for ind in range(len(ff)):
-    print params[ind] + ": " + str(coefficients[ind])
-
-print "Linear Model Parameters: " + str(m.get_params())
 
 y_est= m.predict(X[:,ff])
 residual=y-y_est
@@ -125,10 +117,8 @@ figure(k+1)
 title('Residual error vs. Attributes for features selected in cross-validation fold {0}'.format(f))
 for i in range(0,len(ff)):
    subplot(2,ceil(len(ff)/2.0),i+1)
-   # plot(X[:,ff[i]].A,residual.A,'.')
    plot(X[:,ff[i]],residual,'.')
    xlabel(attributeNames[ff[i]])
    ylabel('residual error')
 
-fig.savefig('regression.png', bbox_inches='tight')
 show()
