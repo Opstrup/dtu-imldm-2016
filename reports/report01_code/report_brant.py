@@ -5,7 +5,7 @@ import xlrd
 from pylab import *
 
 # Load xls sheet with data
-doc = xlrd.open_workbook('dataset/forestfires.xls').sheet_by_index(0)
+doc = xlrd.open_workbook('../dataset/forestfires.xls').sheet_by_index(0)
 
 # Extract attribute names
 attributeNames = doc.row_values(0,0,13)
