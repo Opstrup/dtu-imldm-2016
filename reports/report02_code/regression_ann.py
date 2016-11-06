@@ -14,8 +14,10 @@ attributeNames = np.delete(attributeNames, len(attributeNames)-1, 0) # Deleting 
 X = stats.zscore(X);
 N, M = X.shape
 spam_class = X[:,57].T
-y = X[:,56]
-X = X[:,1:55]
+#y = X[:,56]
+#X = X[:,1:55]
+y = X[:,19]
+X = np.concatenate((X[:,1:18], X[:,20:55]), axis=1)
 # X = np.delete(X, M-1,1) # Deleting spam class column
 # X = np.delete(X, M-2, 1) # Removing the column to be predicted
 N, M = X.shape
@@ -43,7 +45,7 @@ N, M = X.shape
 
 
 # Parameters for neural network classifier
-n_hidden_units = 1      # number of hidden units
+n_hidden_units = 2      # number of hidden units
 n_train = 5             # number of networks trained in each k-fold
 learning_goal = 10    # stop criterion 1 (train mse to be reached)
 max_epochs = 64         # stop criterion 2 (max epochs in training)
@@ -88,7 +90,7 @@ for train_index, test_index in CV:
     print('Best train error: {0}...'.format(best_train_error))
     y_est = bestnet[k].sim(X_test)
     errors[k] = np.power(y_est-y_test,2).sum().astype(float)/y_test.shape[0]
-    print('Best Net ' + k + ': ' + str(bestnet[k]))
+    print('Best Net ' + str(k) + ': ' + str(bestnet[k]))
     k+=1
 
 # Print the average least squares error
