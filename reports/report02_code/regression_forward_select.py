@@ -12,13 +12,12 @@ from toolbox_02450 import feature_selector_lr, bmplot
 X = np.loadtxt("../dataset/spam.data")
 
 attributeNames = np.loadtxt("../dataset/spambase.names", dtype='str').T
-attributeNames = attributeNames[1:55] # Deleting the attributename, of prediction
+attributeNames = attributeNames[0:55] # Deleting the attributename, of prediction
 
 N, M = X.shape
-spam_class = X[:,57].T
 X = stats.zscore(X);
-y = X[:,56]
-X = X[:,1:55]
+y = X[:,19]
+X = np.concatenate((X[:,1:18], X[:,20:55]), axis=1)
 N, M = X.shape
 ## Crossvalidation
 # Create crossvalidation partition for evaluation
@@ -131,4 +130,5 @@ for i in range(0,len(ff)):
    xlabel(attributeNames[ff[i]])
    ylabel('residual error')
 
+fig.savefig('regression.png', bbox_inches='tight')
 show()
