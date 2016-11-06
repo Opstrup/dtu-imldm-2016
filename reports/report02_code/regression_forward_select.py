@@ -21,7 +21,7 @@ X = np.concatenate((X[:,1:18], X[:,20:55]), axis=1)
 N, M = X.shape
 ## Crossvalidation
 # Create crossvalidation partition for evaluation
-K = 2
+K = 10
 CV = cross_validation.KFold(N,K,shuffle=True)
 
 # Initialize variables
