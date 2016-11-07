@@ -1,12 +1,4 @@
-% !TeX spellcheck = en_GB
 \section{Conclusion}
-\label{sec:conclusion}
-While looking to implement \CSP{} on eCos, it turned out that the current protocol used at DTU, needed better documentation in order to compare it to \CSP{}. Before documenting and comparing these protocols, a brief introduction to RDP was given with comparison with TCP and UDP. After creating the documentation for dtuProto it was compared to \CSP{}, but no protocol has been chosen as the "correct to use" protocol, as it is not the scope of this project and seems like a question of satellite design rather than best designed protocol.
+In the regression part we want to predict the variable word-freq-credit. But error rate is quite high. For the linear regression part, the error rate if above 0.9 even when we model it with feature selection. The modeling result using Artificial Neural Network is better than linear regression, but still has a high mean-square error of 0.9134.
 
-Implementing \CSP{} on eCos has been successful, and running test programs has shown the same behaviour as a Linux version of \CSP{} indicating a working implementation. Some extra parts of \CSP{} has not been tested as no test programs for these exist and some compiler issues prevents this. These should be tested thoroughly when these issues has been fixed, but operation of \CSP{} with CSP-UDP is possible.
-
-A note on how ECC could be used alongside dtuProto and \CSP{} has been given. The use of the FX.25 opposed to other ECC algorithms has been touched. The use of an in-radio-interface implementation seems to be the best option when it comes to ECC.
-
-%Implementing \CSP on eCos has begun but still needs work on several subsystems including interfacing with simple programming interfaces in eCos. To get this done, even more knowledge of eCos is needed and with a time constrain of this project, this could possibly be a time consuming bottleneck.
-
-%Further work should focus on sorting out the eCos interface problems, and finishing up the last two constructs needed in \CSP as well as figuring out if the thread memory allocation in eCos will be a problem.
+However, when we do the decision problem of checking whether an email is SPAM or not. The prediction result is much better. For both ANN and KNN method we have a test error rate below 10\%. And ANN perform better with 6.89\% error rate. This shows that predicting spam email with these attributes is somehow effective.
