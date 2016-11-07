@@ -1,5 +1,6 @@
 #!/usr/bin/env/python
 import numpy as np
+import pylab
 from pylab import *
 import scipy.linalg as linalg
 from scipy.stats import zscore
@@ -7,6 +8,7 @@ import sklearn.linear_model as lm
 from sklearn import cross_validation
 from scipy import stats
 from toolbox_02450 import feature_selector_lr, bmplot
+from matplotlib import pyplot as plt 
 
 # Load spam data from file
 X = np.loadtxt("../dataset/spam.data")
@@ -66,12 +68,18 @@ for train_index, test_index in CV:
     subplot(1,2,1)
     plot(range(1,len(loss_record)), loss_record[1:])
     xlabel('Iteration')
+    # pylab.ylim([0,500])
+    fig = plt.figure()
     ylabel('Squared error (crossvalidation)')
+    savefig("regression-first-flold.png")
+   # plt.ylabel('ylabel', fontsize=5)
 
     subplot(1,3,3)
+    #attributeNames(fontsize=5)
     bmplot(attributeNames, range(1,features_record.shape[1]), -features_record[:,1:])
     clim(-1.5,0)
     xlabel('Iteration')
+    savefig("regression-first-flold.png")
 
     print('Cross validation fold {0}/{1}'.format(k+1,K))
     print('Train indices: {0}'.format(train_index))
@@ -100,7 +108,7 @@ bmplot(attributeNames, range(1,Features.shape[1]+1), -Features)
 clim(-1.5,0)
 xlabel('Crossvalidation fold')
 ylabel('Attribute')
-savefig('regression_1.svg')
+savefig('regression_11.png')
 
 
 # Inspect selected feature coefficients effect on the entire dataset and
