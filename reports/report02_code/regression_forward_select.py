@@ -97,7 +97,7 @@ print('- R^2 test:     {0}'.format((Error_test_nofeatures.sum()-Error_test_fs.su
 figure(k,figsize=(10,20))
 subplot(1,3,2)
 bmplot(attributeNames, range(1,Features.shape[1]+1), -Features)
-clim(-1.5,0)
+#clim(-1.5,0)
 xlabel('Crossvalidation fold')
 ylabel('Attribute')
 savefig('regression_1.svg')

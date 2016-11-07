@@ -1,16 +1,16 @@
 digraph Tree {
 node [shape=box] ;
-0 [label="char_freq_$ <= -0.0826\nentropy = 0.9696\nsamples = 3681\nvalue = [2217, 1464]"] ;
-1 [label="word_freq_remove <= -0.1513\nentropy = 0.7967\nsamples = 2784\nvalue = [2113, 671]"] ;
+0 [label="char_freq_! <= -0.2337\nentropy = 0.9715\nsamples = 3681\nvalue = [2205, 1476]"] ;
+1 [label="word_freq_remove <= -0.2407\nentropy = 0.6347\nsamples = 2098\nvalue = [1762, 336]"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="entropy = 0.654\nsamples = 2512\nvalue = [2089, 423]"] ;
+2 [label="entropy = 0.4954\nsamples = 1954\nvalue = [1742, 212]"] ;
 1 -> 2 ;
-3 [label="entropy = 0.4306\nsamples = 272\nvalue = [24, 248]"] ;
+3 [label="entropy = 0.5813\nsamples = 144\nvalue = [20, 124]"] ;
 1 -> 3 ;
-4 [label="word_freq_hp <= -0.0895\nentropy = 0.5176\nsamples = 897\nvalue = [104, 793]"] ;
+4 [label="char_freq_$ <= -0.2819\nentropy = 0.8552\nsamples = 1583\nvalue = [443, 1140]"] ;
 0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="entropy = 0.3519\nsamples = 845\nvalue = [56, 789]"] ;
+5 [label="entropy = 1.0\nsamples = 820\nvalue = [409, 411]"] ;
 4 -> 5 ;
-6 [label="entropy = 0.3912\nsamples = 52\nvalue = [48, 4]"] ;
+6 [label="entropy = 0.2628\nsamples = 763\nvalue = [34, 729]"] ;
 4 -> 6 ;
 }
