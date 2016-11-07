@@ -62,7 +62,7 @@ for train_index, test_index in CV:
 
     print str(m.coef_)
 
-    figure(k)
+    figure(k,figsize=(10,20))
     subplot(1,2,1)
     plot(range(1,len(loss_record)), loss_record[1:])
     xlabel('Iteration')
@@ -94,7 +94,7 @@ print('- Test error:     {0}'.format(Error_test_fs.mean()))
 print('- R^2 train:     {0}'.format((Error_train_nofeatures.sum()-Error_train_fs.sum())/Error_train_nofeatures.sum()))
 print('- R^2 test:     {0}'.format((Error_test_nofeatures.sum()-Error_test_fs.sum())/Error_test_nofeatures.sum()))
 
-figure(k)
+figure(k,figsize=(10,20))
 subplot(1,3,2)
 bmplot(attributeNames, range(1,Features.shape[1]+1), -Features)
 clim(-1.5,0)
@@ -113,7 +113,7 @@ m = lm.LinearRegression().fit(X[:,ff], y)
 y_est= m.predict(X[:,ff])
 residual=y-y_est
 
-figure(k+1)
+figure(k+1,figsize=(10,20))
 title('Residual error vs. Attributes for features selected in cross-validation fold {0}'.format(f))
 for i in range(0,len(ff)):
    subplot(2,ceil(len(ff)/2.0),i+1)

@@ -31,7 +31,7 @@ X = stats.zscore(X);
 
 ## Crossvalidation
 # Create crossvalidation partition for evaluation
-K = 10
+K = 5
 CV = cross_validation.KFold(N,K,shuffle=True)
 
 # Initialize variables
@@ -54,7 +54,7 @@ max_neigh = 20
 knn_errors = np.zeros((K,max_neigh))
 
 k=0
-fig = figure(17)
+fig = figure(17,figsize=(8,16))
 ax = fig.add_subplot(111)
 ax.set_title('Decision tree folds (green: training, red: test)')
 ax.set_xlabel('Tree depth')
@@ -114,7 +114,7 @@ for train_index, test_index in CV:
         dtc_error_train[k,j] = de_train.argmin() +1
 
         if j == internal_cross_validation - 1 :
-            t=fig.add_subplot(5,2,k+1)
+            t=fig.add_subplot(5,1,k+1)
             t.plot(np.arange(1,dtc_runs+1),de_test, 'r',np.arange(1,dtc_runs+1),de_train,'g')
             for item in (t.get_yticklabels()):
                 item.set_fontsize(9)
@@ -182,7 +182,7 @@ xlabel('Folds')
 ylabel('Optimal pruning level')
 
 
-fig_knn = figure(3)
+fig_knn = figure(3,figsize=(8,16))
 ax_knn = fig_knn.add_subplot(111)
 ax_knn.set_title('K-nearest neighbour test folds')
 ax_knn.set_xlabel('Neighbours')
@@ -197,7 +197,7 @@ knn_compare = np.zeros(K)
 
 for i in range(K):
     knn_compare[i] = min(knn_errors[i])
-    t=fig_knn.add_subplot(5,2,i+1)
+    t=fig_knn.add_subplot(5,1,i+1)
     t.plot(np.arange(1,max_neigh+1),knn_errors[i])
     for item in (t.get_yticklabels()):
         item.set_fontsize(9)
