@@ -14,8 +14,8 @@
 *.fot
 *.cb
 *.cb2
-*.pdf
-**/*.pdf
+
+
 *.icloud
 02450Toolbox_Python/*/**
 02450Toolbox_Python/**
