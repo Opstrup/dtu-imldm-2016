@@ -1,0 +1,4 @@
+
+
+HIEARCHICAL CLUSTERS
+{1: {'valid': 0, 'purity': 1.0, 'spam': 2}, 2: {'valid': 0, 'purity': 1.0, 'spam': 1}, 3: {'valid': 1, 'purity': 1.0, 'spam': 0}, 4: {'valid': 1, 'purity': 1.0, 'spam': 0}, 5: {'valid': 0, 'purity': 1.0, 'spam': 2}, 6: {'valid': 0, 'purity': 1.0, 'spam': 2}, 7: {'valid': 0, 'purity': 1.0, 'spam': 3}, 8: {'valid': 2786, 'purity': 0.6080314273243125, 'spam': 1796}, 9: {'valid': 0, 'purity': 1.0, 'spam': 1}, 10: {'valid': 0, 'purity': 1.0, 'spam': 1}, 11: {'valid': 0, 'purity': 1.0, 'spam': 1}, 12: {'valid': 0, 'purity': 1.0, 'spam': 1}, 13: {'valid': 0, 'purity': 1.0, 'spam': 1}, 14: {'valid': 0, 'purity': 1.0, 'spam': 1}, 15: {'valid': 0, 'purity': 1.0, 'spam': 1}}
