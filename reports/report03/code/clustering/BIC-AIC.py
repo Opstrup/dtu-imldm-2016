@@ -1,8 +1,11 @@
+# exercise 10.1.5
 from pylab import *
+from scipy.io import loadmat
 from toolbox_02450 import clusterplot
 from sklearn.mixture import GMM
-import numpy as np
 from sklearn import cross_validation
+import numpy as np
+
 
 # Load spam data
 X = np.loadtxt('../../dataset/spam.data')
@@ -14,12 +17,13 @@ y = np.asmatrix(X[:,57].astype(int)).T
 X = np.delete(X, M-1,1)
 N, M = X.shape
 
+
 # Range of K's to try
 KRange = range(1,20)
 T = len(KRange)
 
 covar_type = 'full'     # you can try out 'diag' as well
-reps = 10                # number of fits with different initalizations, best result will be kept
+reps = 3                # number of fits with different initalizations, best result will be kept
 
 # Allocate variables
 BIC = np.zeros((T,1))
@@ -51,12 +55,10 @@ for t,K in enumerate(KRange):
 
             # compute negative log likelihood of X_test
             CVE[t] += -gmm.score(X_test).sum()
-
+            
 
 # Plot results
-np.savetxt("gmm_cv_BIC_40-60.txt", BIC)
-np.savetxt("gmm_cv_AIC_40-60.txt", AIC)
-np.savetxt("gmm_cv_CVE_40-60.txt", CVE)
+
 figure(1); hold(True)
 plot(KRange, BIC)
 plot(KRange, AIC)

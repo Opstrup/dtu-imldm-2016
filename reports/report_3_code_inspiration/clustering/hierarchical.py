@@ -4,8 +4,8 @@ from scipy.cluster.hierarchy import linkage, fcluster, dendrogram
 import numpy as np
 
 # Load spam data
-X = np.loadtxt('../../data/spam.data')
-attributeNames = np.loadtxt("../../data/spambase.names",dtype="string").tolist()
+X = np.loadtxt('../../dataset/spam.data')
+attributeNames = np.loadtxt("../../dataset/spambase.names",dtype="string").tolist()
 classNames = ["Valid", "Spam"]
 C = len(classNames)
 N, M = X.shape
@@ -20,14 +20,14 @@ Metric = 'seuclidean'
 Z = linkage(X, method=Method, metric=Metric)
 
 # Compute and display clusters by thresholding the dendrogram
-Maxclust = 15
+Maxclust = 5
 cls = fcluster(Z, criterion='maxclust', t=Maxclust)
 np.savetxt("cls_hierarchical.txt", cls)
 # figure(1)
 # clusterplot(X, cls.reshape(cls.shape[0],1), y=y)
 
 # Display dendrogram
-max_display_levels=15
+max_display_levels=5
 figure(2)
 dendrogram(Z, truncate_mode='level', p=max_display_levels)
 
