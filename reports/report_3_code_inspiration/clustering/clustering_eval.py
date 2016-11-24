@@ -6,8 +6,8 @@ from scipy.cluster.hierarchy import linkage, fcluster, dendrogram
 from sklearn import cross_validation
 
 # Load spam data
-X = np.loadtxt('../../data/spam.data')
-attributeNames = np.loadtxt("../../data/spambase.names",dtype="string").tolist()
+X = np.loadtxt('../../dataset/spam.data')
+attributeNames = np.loadtxt("../../dataset/spambase.names",dtype="string").tolist()
 classNames = ["Valid", "Spam"]
 C = len(classNames)
 N, M = X.shape

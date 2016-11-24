@@ -4,8 +4,8 @@ from sklearn.mixture import GMM
 import numpy as np
 
 # Load spam data
-X = np.loadtxt('../../data/spam.data')
-attributeNames = np.loadtxt("../../data/spambase.names",dtype="string").tolist()
+X = np.loadtxt('../../dataset/spam.data')
+attributeNames = np.loadtxt("../../dataset/spambase.names",dtype="string").tolist()
 classNames = ["Valid", "Spam"]
 C = len(classNames)
 N, M = X.shape
@@ -35,14 +35,15 @@ Z = Y * V
 z = np.asarray(Z[:,0:2])
 
 # Number of clusters
-K = 2
-cov_type = 'full'       # type of covariance, you can try out 'diag' as well
+K = 5
+cov_type = 'diag'       # type of covariance, you can try out 'diag' as well
 reps = 10                # number of fits with different initalizations, best result will be kept
 
 # Fit Gaussian mixture model
 gmm = GMM(n_components=K, covariance_type=cov_type, n_init=reps, params='wmc').fit(X)
 cls = gmm.predict(X)    # extract cluster labels
 cds = gmm.means_        # extract cluster centroids (means of gaussians)
+print cds
 covs = gmm.covars_      # extract cluster shapes (covariances of gaussians)
 
 print "Z Shape: " + str(Z.shape)
@@ -71,7 +72,9 @@ result = [ abs(cls[i] - y[i]) for i in range(len(cls))]
 np.savetxt("result.txt",result)
 print "Result mean: " + str(np.mean(result))
 
-# Plot results:
-# figure(figsize=(14,9))
-# clusterplot(z, clusterid=cls, centroids=cds, y=y, covars=covs)
-# show()
+#Plot results:
+figure(figsize=(10,6))
+clusterplot(z, clusterid=cls, centroids=cds, y=y, covars=5)
+
+
+show()
