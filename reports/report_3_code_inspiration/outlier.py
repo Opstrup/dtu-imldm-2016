@@ -16,6 +16,7 @@ y = np.asmatrix(X[:,57].astype(int)).T
 N, M = X.shape
 #X = stats.zscore(X);
 
+
 magic = 4601
 
 ### Gausian Kernel density estimator
@@ -51,7 +52,7 @@ gauss_cdf = gauss_cdf*(max(density[:,0])/max(gauss_cdf))
 # Plot density estimate of outlier score
 figure(1)
 plot(range(magic),density[:magic,0], label="Density")
-plot(range(magic),gauss_cdf[:magic],'r--', label="CDF")
+#plot(range(magic),gauss_cdf[:magic],'r--', label="CDF")
 legend(loc="upper left")
 title('Density estimate')
 
