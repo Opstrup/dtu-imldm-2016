@@ -14,7 +14,7 @@ We validate the number of clusters for Gaussian Mixture Model based on the EM al
 As it shown in fig.1, the group use BIC, AIC and 10-fold crossvalidation to assess the best number of clusters for the SPAM dataset. We compute the three measures for K = 1,...20, and use 10 replicates to avoid bad solutions due to poor initial conditions. Best result will be kepted. The model with lowest AIC and BIC value indicates the model with best trade-off. We can tell from fig.1 that when K = 5,both BIC and AIC reach a elbow, the distortion goes rapidly before that point. In this case, the group considers the ideal value of K would be 5.
 
 
-We did a dimensionality reduction for the data before we did the cluster. The data has been reduced into two componets. The cluster of SPAM data by GMM with 5 clusters, is shown in fig.2.     
+We do a dimensionality reduction for the data before we cluster them. The data has been reduced into two componets. The cluster of SPAM data by GMM with 5 clusters, is shown in fig.2. We can see from the fig.2 that few data are clustered into a large cluster with low purity, while other four clusters are locate closly with high purity. The cluster center calculated by GMM is 1.65138013475.    
 
 \vspace{-5pt}
 %kommentar

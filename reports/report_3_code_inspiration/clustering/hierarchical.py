@@ -15,7 +15,7 @@ N, M = X.shape
 
 # Perform hierarchical/agglomerative clustering on data matrix
 Method = 'single'
-Metric = 'seuclidean'
+Metric = 'euclidean'
 
 Z = linkage(X, method=Method, metric=Metric)
 
@@ -23,8 +23,8 @@ Z = linkage(X, method=Method, metric=Metric)
 Maxclust = 5
 cls = fcluster(Z, criterion='maxclust', t=Maxclust)
 np.savetxt("cls_hierarchical.txt", cls)
-# figure(1)
-# clusterplot(X, cls.reshape(cls.shape[0],1), y=y)
+figure(1)
+clusterplot(X, cls.reshape(cls.shape[0],1), y=y)
 
 # Display dendrogram
 max_display_levels=5
