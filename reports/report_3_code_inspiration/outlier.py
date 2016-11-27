@@ -12,6 +12,15 @@ classNames = ["Valid", "Spam"]
 C = len(classNames)
 N, M = X.shape
 y = np.asmatrix(X[:,57].astype(int)).T
+
+print(size(y));
+count = 0;
+for i in range(size(y)):
+    if (y[i,0]==1):
+        count += 1;
+print(count)
+
+
 #X = np.delete(X, M-1,1)
 N, M = X.shape
 #X = stats.zscore(X);
@@ -23,7 +32,7 @@ magic = 4601
 # cross-validate kernel width by leave-one-out-cross-validation
 # (efficient implementation in gausKernelDensity function)
 # evaluate for range of kernel widths
-widths = X.var(axis=0).max() * (2.0**np.arange(-10,3))
+widths = X.var(axis=0).max() * (2.0**np.arange(-5,5))
 logP = np.zeros(np.size(widths))
 for i,w in enumerate(widths):
    print str(i+1)+"/"+str(len(widths))+""
@@ -52,9 +61,9 @@ gauss_cdf = gauss_cdf*(max(density[:,0])/max(gauss_cdf))
 # Plot density estimate of outlier score
 figure(1)
 plot(range(magic),density[:magic,0], label="Density")
-#plot(range(magic),gauss_cdf[:magic],'r--', label="CDF")
-legend(loc="upper left")
-title('Density estimate')
+plot(range(magic),gauss_cdf[:magic], label="CDF")
+legend(loc="lower right")
+title(' Gaussian Kernel Density')
 
 ### K-neighbors density estimator
 # Neighbor to use:
@@ -78,9 +87,9 @@ cdf = cdf*(d_max/max(cdf))
 # Plot k-neighbor estimate of outlier score (distances)
 figure(3)
 plot(range(magic),density[:magic,0], label="Density")
-plot(range(magic),cdf[:magic],'r--', label="CDF")
+plot(range(magic),cdf[:magic], label="CDF")
 legend(loc="upper left")
-title('KNN density: Outlier score')
+title('KNN density')
 
 ### K-nearest neigbor average relative density
 # Compute the average relative density
@@ -102,9 +111,9 @@ cdf = cdf*(max(density[:,0])/max(cdf))
 # Plot k-neighbor estimate of outlier score (distances)
 figure(5)
 plot(range(magic),density[:magic,0], label="Density")
-plot(range(magic),cdf[:magic],'r--', label="CDF")
+plot(range(magic),cdf[:magic], label="CDF")
 legend(loc="upper left")
-title('KNN average relative density: Outlier score')
+title('KNN average relative density')
 
 ### Distance to 5'th nearest neighbor outlier score
 K = 5
@@ -126,7 +135,7 @@ cdf = cdf*(max(density[:,0])/max(cdf))
 # Plot k-neighbor estimate of outlier score (distances)
 figure(7)
 plot(range(magic),density[:magic,0], label="Density")
-plot(range(magic),cdf[:magic],'r--', label="CDF")
+#plot(range(magic),cdf[:magic],'r--', label="CDF")
 legend(loc="upper left")
 title('5th neighbor distance: Outlier score')
 show()
